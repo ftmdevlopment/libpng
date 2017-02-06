@@ -42,7 +42,7 @@ ifeq ($(HOST_OS),windows)
 	ifeq ($(USE_MINGW),)
 #		Case where we're building windows but not under linux (so it must be cygwin)
 #		In this case, gcc cygwin doesn't recognize -fvisibility=hidden
-		$(info libpng: Ignoring gcc flag $(common_CFLAGS) on Cygwin)
+        $(info libpng Ignoring gcc flag $(common_CFLAGS) on Cygwin)
 	common_CFLAGS :=
 	endif
 endif
